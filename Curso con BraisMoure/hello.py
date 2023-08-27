@@ -1,5 +1,6 @@
 # Esto es un comentario
 # Hola Mundo
+
 print("Hola Python")
 print('Hola Python')
 
@@ -16,6 +17,7 @@ en varias lineas
 '''
 
 # Consultar el tipo de datos
+
 print(type("Hola Python")) # Tipo 'str'
 print(type(10)) # Tipo 'int'
 print(type(3.14)) # Tipo 'float'
