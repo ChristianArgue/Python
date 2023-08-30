@@ -32,3 +32,37 @@ print(miVaribale)
 miVaribale = miVaribale + 1
 miVaribale += 1
 print(miVaribale)
+
+#Operador de Comparacion
+a = 4
+b = 5
+resultado = (a == b)
+print(f'Resultado == : {resultado}')
+
+resultado = (a != b)
+print(f'Resultado != : {resultado}')
+
+resultado = (a > b)
+print(f'Resultado > : {resultado}')
+
+resultado = (a >= b)
+print(f'Resultado >= : {resultado}')
+
+resultado = (a < b)
+print(f'Resultado < : {resultado}')
+
+resultado = (a <= b)
+print(f'Resultado <= : {resultado}')
+
+# Operadores Logicos
+a = True
+b = False
+
+resultado = (a and b)
+print(resultado)
+
+resultado = (a or b)
+print(resultado)
+
+resultado = not b
+print(resultado)
