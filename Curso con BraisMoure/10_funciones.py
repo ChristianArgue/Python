@@ -28,3 +28,14 @@ def print_name_with_default(name, surname, alias = "Sin Alias"):
 
 print_name_with_default("Brais", "Moure", "MoureDev")
 print_name_with_default("Brais", "Moure")
+
+def print_text(*text):
+    print(text)
+
+print_text('Hola', 'Python', 'ChrisDev')
+
+def print_upper_texts(*texts):
+    for text in texts:
+        print(text)
+
+print_upper_texts('Hola', 'Python', 'ChrisDev')
