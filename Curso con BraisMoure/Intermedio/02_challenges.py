@@ -16,19 +16,19 @@
 
 """
 
-def fizzbuzz():
-    for i in range(1, 101):
-        if i % 3 == 0 and i % 5 == 0:
-            print('FizzBuzz')
-        elif i % 3 == 0:
-            print('Fizz')
-        elif i % 5 == 0:
-            print('Buzz')
-        else:
-            print(i)
+# def fizzbuzz():
+#     for i in range(1, 101):
+#         if i % 3 == 0 and i % 5 == 0:
+#             print('FizzBuzz')
+#         elif i % 3 == 0:
+#             print('Fizz')
+#         elif i % 5 == 0:
+#             print('Buzz')
+#         else:
+#             print(i)
 
 
-fizzbuzz()
+# fizzbuzz()
 
 # ---------------------------------------------------------- #
 
@@ -47,13 +47,13 @@ fizzbuzz()
 
 """
 
-def is_anagrama(wordOne, wordTwo):
-    if wordOne.lower() == wordTwo.lower():
-        return False
-    # Usamos sorted para ordenar la palabra en una lista y en orden alfabetico
-    return sorted(wordOne.lower()) == sorted(wordTwo.lower())
+# def is_anagrama(wordOne, wordTwo):
+#     if wordOne.lower() == wordTwo.lower():
+#         return False
+#     # Usamos sorted para ordenar la palabra en una lista y en orden alfabetico
+#     return sorted(wordOne.lower()) == sorted(wordTwo.lower())
 
-print(is_anagrama('Amor', 'Feo'))
+# print(is_anagrama('Amor', 'Feo'))
 
 # ----------------------------------------------------------------------- #
 
@@ -71,13 +71,63 @@ print(is_anagrama('Amor', 'Feo'))
 
 """
 
-def fibonacci():
-    prev = 0
-    next = 1
-    for i in range(51):
-        print(prev)
-        fib = prev + next
-        prev = next
-        next = fib
+# def fibonacci():
+#     prev = 0
+#     next = 1
+#     for i in range(51):
+#         print(prev)
+#         fib = prev + next
+#         prev = next
+#         next = fib
 
-fibonacci()
+# fibonacci()
+
+# ------------------------------------------------------------------- # 
+
+"""
+
+                            ¿ES UN NUMERO PRIMO?
+ ________________________________________________________________________________
+|                                                                                |
+| Escribe un programa que se encargue de comprobar si un numero es o no primo.   |
+| Hecho esto, imprime los numeros primos entre 1 y 100.                          |
+|________________________________________________________________________________| 
+
+"""
+
+# def is_prime():
+#     for number in range(1, 101):
+#         if number >= 2:
+#             is_divisible = False
+#             for i in range(2, number):
+#                 if number % i == 0:
+#                     is_divisible = True
+            
+#             if not is_divisible:
+#                 print(number)
+
+# is_prime()        
+
+# -------------------------------------------------------------------- #
+
+"""
+
+                            INVIRTIENDO CADENAS
+ _____________________________________________________________________________
+|                                                                             |
+| Crea un programa que invierta el orden de una cadena de texto               |
+| sin usar funciones propias del lenguaje que lo hagan de forma automatica    |
+| - Si le pasamos 'Hola Mundo' nos retornaria 'odnuM aloH'                    |
+|_____________________________________________________________________________|
+
+"""
+
+def reverse_text(text):
+    text_len = len(text)
+    reversed_text = ""
+    for i in range(0, text_len):
+        reversed_text += text[text_len - i - 1]
+
+    return reversed_text
+
+print(reverse_text('Hola Mundo'))
