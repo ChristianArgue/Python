@@ -1,0 +1,6 @@
+Mi Nombre es Christian
+Mi Apellido es Arguello
+Mi edad es 26
+Y mi lenguaje preferido es Python
+Aunque tambien me gusta Kotlin
+Y Swift
